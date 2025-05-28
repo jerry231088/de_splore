@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:15
+    container_name: db_splore_pg
+    restart: always
+    environment:
+      POSTGRES_USER: usr_splore
+      POSTGRES_PASSWORD: 5pl0r3
+      POSTGRES_DB: db_splore
+    ports:
+      - "5433:5432"  # Use "5433:5432" if 5432 is in use locally and accordingly update Port in db_config.json file
+    networks:
+      - backend
+
+networks:
+  backend:

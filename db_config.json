@@ -1,0 +1,7 @@
+{
+  "dbname": "db_splore",
+  "user": "usr_splore",
+  "password": "5pl0r3",
+  "host": "localhost",
+  "port": 5433
+}
